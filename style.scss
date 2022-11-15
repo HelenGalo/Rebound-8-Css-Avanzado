@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url('/img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+
+}
+
+
+.animacion{
+   
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: max-content;
+    margin-top: 20%;
+
+   
+    &__gato{
+        position:relative;
+        width: 20%;
+        animation: mover 5s infinite;   
+        animation: myfirst 5s infinite;
+        animation-direction: reverse;
+    
+    }
+    &__perro{
+        position:relative;
+        width: 20%;
+      animation: mover 5s infinite;
+      animation: myfirst 5s infinite;
+      animation-direction: reverse;
+        animation-delay: 0.2s;
+    
+    }
+
+    
+   }
+ @keyframes mover {
+    from {right: 0px;}
+    to {right: 300px;}
+    }
+    @keyframes myfirst {
+        0%   { left: 0px; top: 0px;}
+        25%  { left: 200px; top: 0px;}
+        50%  {right: 100px; top: 200px;}
+        75%  { left: 0px; top: 200px;}
+        100% { left: 0px; top: 0px;}
+      }
